@@ -1,0 +1,806 @@
+/*=============================================================*/
+/*=========================== HOME PAGE ======================*/
+/*=============================================================*/
+
+/*========== Header Section =============*/
+
+.header {
+  background-color: var(--clr-back);
+}
+
+.rowHeader {
+  display: flex;
+}
+
+.rowHeader img {
+  width: 50%;
+}
+
+.rowNav {
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.textBox {
+  width: 60%;
+  align-self: center;
+  padding: 2.5rem;
+}
+
+.textBox p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header .btn {
+  background-color: var(--clr-green);
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.header .btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--clr-green);
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .rowNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowHeader {
+    flex-direction: column-reverse;
+  }
+
+  .rowHeader img {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .textBox {
+    align-self: flex-start;
+    width: 100%;
+  }
+}
+
+/* Screen Size : 360px */
+
+@media screen and (max-width: 360px) {
+  .rowHeader {
+    flex-direction: column-reverse;
+  }
+
+  .rowHeader img {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .textBox {
+    align-self: flex-start;
+    width: 100%;
+  }
+}
+
+/*========== Bloc1/2/3 Section =============*/
+
+.bloc1,
+.bloc2,
+.bloc3 {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.bloc1 img,
+.bloc2 img,
+.bloc3 img {
+  width: 46%;
+}
+
+.info {
+  margin-left: 3.6rem;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .bloc1,
+  .bloc2,
+  .bloc3 {
+    width: 93%;
+  }
+
+  .bloc1 .row,
+  .bloc2 .row,
+  .bloc3 .row {
+    flex-direction: column;
+  }
+
+  .bloc1 img,
+  .bloc2 img,
+  .bloc3 img {
+    width: 100%;
+  }
+
+  .bloc1 .info,
+  .bloc2 .info,
+  .bloc3 .info {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .bloc2 .row {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Screen Size : 360px */
+
+@media screen and (max-width: 360px) {
+  .features {
+    width: 93%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bloc1 .row,
+  .bloc2 .row,
+  .bloc3 .row {
+    flex-direction: column;
+  }
+
+  .bloc1 img,
+  .bloc2 img,
+  .bloc3 img {
+    width: 100%;
+  }
+
+  .bloc1 .info,
+  .bloc2 .info,
+  .bloc3 .info {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .bloc2 .row {
+    flex-direction: column-reverse;
+  }
+}
+
+/*========== Features Section =============*/
+
+.features {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.features h3 {
+  margin-top: 2rem;
+}
+.features p {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 9px;
+  border: solid 2px var(--clr-bordure);
+  position: relative;
+}
+
+.card i {
+  position: absolute;
+  top: -20px;
+}
+
+.features i,
+footer i {
+  padding: 1rem;
+  color: var(--clr-green);
+  border-radius: 6px;
+  background-color: var(--clr-lightGreen);
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 1440px */
+
+@media screen and (max-width: 1440px) {
+  .features {
+    width: 93%;
+  }
+  .grid {
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* Screen Size : 1024px */
+
+@media screen and (max-width: 1024px) {
+  .features {
+    width: 93%;
+  }
+  .grid {
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .features {
+    width: 93%;
+  }
+  .grid {
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* Screen Size : 360px */
+
+@media screen and (max-width: 360px) {
+  .features,
+  .tetsimonials {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*========== Testimonials Section =============*/
+
+.tetsimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.tetsimonials h2 {
+  width: 67%;
+  margin-top: 0.7em;
+}
+
+.tetsimonials img {
+  width: 40%;
+}
+
+.testCol {
+  border-radius: 5px;
+  padding: 1rem;
+  border: 4px solid var(--clr-bordure);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  width: 67%;
+}
+
+.testCol p {
+  margin-top: 1.6rem;
+}
+
+.testCol img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.testCol i {
+  color: var(--clr-green);
+}
+
+/*========= Media Queries  ========*/
+
+@media screen and (max-width: 1440px) {
+  .tetsimonials .row {
+    flex-direction: row;
+  }
+
+  .tetsimonials {
+    width: 93%;
+  }
+
+  .tetsimonials .mainImg {
+    width: 30%;
+    margin-left: 2rem;
+  }
+
+  .testCol + .testCol {
+    margin-left: 0.8rem;
+  }
+}
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .tetsimonials {
+    width: 93%;
+  }
+
+  .tetsimonials .row {
+    flex-direction: column-reverse;
+  }
+
+  .tetsimonials .testCol {
+    width: 100%;
+  }
+
+  .tetsimonials .mainImg {
+    width: 80%;
+  }
+
+  .tetsimonials h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .tetsimonials h2::before {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    width: 14%;
+    border-radius: 5px;
+    border-top: 6px solid var(--clr-green);
+    margin-bottom: 1.5rem;
+  }
+
+  .tetsimonials .horizontal {
+    display: none;
+  }
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 360px */
+
+@media screen and (max-width: 360px) {
+  .tetsimonials {
+    width: 95%;
+  }
+}
+/*========== Companies Section =============*/
+
+.company {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.company img {
+  width: 14%;
+}
+
+/*=============================================================*/
+/*=========================== TARIF PAGE ======================*/
+/*=============================================================*/
+
+/*============ Forfait price Styles =============*/
+
+.forfaitPrice {
+  width: 66%;
+  margin: auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.forfaitPrice h2,
+.questions h2 {
+  margin-bottom: 2rem;
+  font-size: 27px;
+  text-align: center;
+}
+
+.forfaitPrice p {
+  margin-left: 0.8rem;
+}
+
+.tarifType {
+  margin-top: 1rem;
+}
+
+.forfaitPrice .row {
+  justify-content: flex-start;
+}
+
+.tarifgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.cardTarif {
+  padding: 30px;
+  border-radius: 9px;
+  border: solid 4px var(--clr-back);
+  margin-bottom: 2rem;
+}
+
+.cardTarif h3 {
+  margin-bottom: 1.4rem;
+}
+
+.cardTarif i {
+  color: var(--clr-green);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.centerCard {
+  border: 4px solid var(--clr-green);
+}
+
+.btnTarif {
+  border-radius: 7px;
+  border: 2px solid var(--clr-lightBlue);
+  color: var(--clr-lightBlue);
+  padding: 0.8rem;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btnTarif:hover {
+  background-color: var(--clr-lightBlue);
+  color: var(--clr-back);
+}
+
+.tarifGreenBtn {
+  background-color: var(--clr-green);
+  color: var(--clr-black);
+  border: none;
+}
+
+.tarifGreenBtn:hover {
+  background-color: transparent;
+  color: var(--clr-green);
+  border: 3px solid var(--clr-green);
+}
+
+.marge {
+  margin-bottom: 2.5rem;
+}
+
+.colorIcon i {
+  color: var(--clr-lightBlue);
+}
+
+@media screen and (max-width: 768px) {
+  .forfaitPrice {
+    width: 80%;
+  }
+  .tarifResponsive {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tarifgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .forfaitPrice {
+    width: 80%;
+  }
+
+  .tarifgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarifResponsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tarifType {
+    margin-top: 0;
+  }
+}
+
+/*========== Question  Section Styles =============*/
+
+.questions {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.question {
+  margin-top: 1.5rem;
+}
+
+.questions h3 {
+  font-size: 23px;
+  color: inherit;
+}
+
+.question p {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 0.6rem;
+  border-left: 5px solid var(--clr-green);
+}
+
+.horizontal {
+  border-top: 6px solid var(--clr-green);
+  width: 5%;
+  margin: auto;
+  border-radius: 4px;
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .questions {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .questions h3 {
+    font-size: 17px;
+  }
+
+  .horizontal {
+    width: 20%;
+  }
+}
+
+/*=============================================================*/
+/*======================== BLOGS PAGE =========================*/
+/*=============================================================*/
+
+.articles {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.headerBlog {
+  background-color: var(--clr-back);
+}
+
+.gridBlog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 20px;
+  border-radius: 9px;
+  /* Align bottoms in the bottom of the page */
+  align-items: flex-start;
+  border: solid 4px var(--clr-back);
+}
+
+.articleCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.articleCard h3 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+}
+
+.articleCard p {
+  margin-bottom: 2rem;
+}
+
+.articleCard .btn {
+  background-color: var(--clr-green);
+  border-radius: 3px;
+  padding: 0.6rem 1.5rem;
+  /* Align bottoms in the bottom of teh page */
+  margin-top: auto;
+}
+
+.articleCard .btn:hover {
+  background-color: transparent;
+  color: var(--clr-green);
+  border: 3px solid var(--clr-green);
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 600px */
+
+@media screen and (max-width: 768px) {
+  .gridBlog {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .articles {
+    width: 95%;
+  }
+
+  .articleCard h3 {
+    font-size: 20px;
+  }
+
+  body,
+  footer {
+    font-size: 15px;
+  }
+
+  .socialMedia i + i {
+    margin-left: 0.7rem;
+  }
+}
+
+/* Screen Size : 360px */
+@media screen and (max-width: 360px) {
+  .gridBlog {
+    grid-template-columns: 1fr;
+  }
+
+  .articles {
+    width: 95%;
+  }
+}
+
+/*=============================================================*/
+/*======================== ARTICLE PAGE =======================*/
+/*=============================================================*/
+
+.headerArticle {
+  background-image: none;
+}
+
+.headerArticle .articleImg {
+  width: 95%;
+  height: 560px;
+  margin: 2rem;
+  border-radius: 20px;
+}
+
+.article {
+  padding-top: 4rem;
+}
+
+.vertical {
+  border-left: 6px solid var(--clr-green);
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-top: 0.89rem;
+}
+
+.article h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.article h3 {
+  margin-top: 1.6rem;
+}
+
+.article p {
+  margin-top: 1rem;
+  width: 90%;
+  text-align: justify;
+}
+
+.article .parag {
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.articleContainer {
+  width: 55%;
+  margin: auto;
+}
+
+.articleContainer ul {
+  margin-top: 0.6rem;
+  flex-direction: column;
+}
+
+.articleContainer li {
+  margin-top: 1rem;
+}
+
+.articleContainer li::before {
+  content: "■";
+  color: var(--clr-green);
+}
+
+.article .styleText {
+  font-weight: 400;
+  border-left: 4px solid var(--clr-green);
+  padding: 0.6rem;
+  font-style: italic;
+}
+
+figure img {
+  margin-top: 1rem;
+}
+
+.imageDesc {
+  border-left: 4px solid var(--clr-green);
+  padding: 0.3rem;
+  font-style: italic;
+}
+
+/*========= Media Queries  ========*/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  figure img {
+    width: 100%;
+  }
+}
+
+/* Screen Size : 360px */
+
+@media screen and (max-width: 360px) {
+  .headerArticle .articleImg {
+    width: 100%;
+    height: 280px;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 26px;
+  }
+
+  .article .parag {
+    width: 90%;
+  }
+
+  .articleContainer {
+    width: 90%;
+  }
+
+  .article h2 {
+    width: 78%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .vertical {
+    height: 50px;
+  }
+
+  figure img {
+    width: 100%;
+  }
+}
